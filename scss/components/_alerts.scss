@@ -145,9 +145,110 @@
 }
 
 .alert-announcement {
+    @include size(458px, 139px);
+    background-color: #fff;
+    border: 1px solid $base-border-color;
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+    .icon-bg {
+        @include size(122px, 137px);
+
+        background-color: $icon-bg;
+        position: relative;
+        float: left;
+
+        .mic-icon {
+            background: url(../../img/mic-icon.png) no-repeat;
+            width: 27px;
+            height: 58px;
+            position: absolute;
+            top: 39px;
+            left: 50px;
+        }
+    }
+
+    .info {
+        float: left;
+        padding-left: 32px;
+        padding-top: 28px;
+
+
+
+        .desc {
+            @include font($secondary-font, $md-font-size, $medium-text-color);
+
+            margin-top: 10px;
+            line-height: 26px;
+        }
+    }
+
 
 }
+.sm-close-btn {
+    background: url(../../img/small-close-icon.png);
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 16px;
+    right: 20px;
 
+}
+.alert-title {
+    @include font($base-font, 22, $dark-text-color);
+}
 .alert-app-error {
+    @include size(458px, 212px);
 
+    border: 1px solid $base-border-color;
+    position: relative;
+    left: 50px;
+    top: 70px;
+
+    .icon {
+        float: left;
+
+        .lg-error-icon {
+            background: url(../../img/lg-error-icon.png) no-repeat;
+            width: 46px;
+            height: 50px;
+
+            position: absolute;
+            top: 36px;
+            left: 34px;
+        }
+    }
+
+    .info {
+        float: left;
+        position: relative;
+        top: 35px;
+        left: 110px;
+
+        .desc {
+            line-height: 28px;
+            margin-top: 20px;
+            @include font($secondary-font, $md-font-size, $medium-text-color);
+        }
+    }
+
+    .send-report-btn {
+        text-decoration: none;
+        @include font($secondary-font, $sm-font-size, $dark-text-color);
+        text-transform: uppercase;
+        position: absolute;
+        border: 1px solid $base-border-color;
+
+        @include size(152px, 39px);
+        display: inline-block;
+        font-weight: bold;
+        text-align: center;
+        line-height: 39px;
+
+        top: 152px;
+        left: 111px;
+    }
 }
+
+.clear { clear: both; }
