@@ -1,0 +1,153 @@
+@import "../partials/mixins";
+@import "../partials/vars";
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.small-warning-icon {
+    background: url(../../img/small-warning-icon.png) no-repeat;
+    width: 29px;
+    height: 25px;
+    position: relative;
+    top: 20px;
+    left: 22px;
+}
+
+.delete-info-dialog {
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+    @include size(361px, 234px);
+
+    border: 1px solid $base-border-color;
+
+    .title {
+        text-align: center;
+        position: absolute;
+        top: 55px;
+        left: 84px;
+        @include font($base-font, $lg-font-size, $dark-text-color);
+    }
+
+    .desc {
+        text-align: center;
+        position: relative;
+        top: 73px;
+        @include font($secondary-font, $sm-font-size, $medium-text-color);
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        border-top: 1px solid $base-border-color;
+
+        .cancel-btn,
+        .delete-btn {
+            width: 179px;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+            text-transform: uppercase;
+
+            @include font($secondary-font, $xs-font-size, $dark-text-color);
+        }
+
+        .cancel-btn {
+            border-right: 1px solid $base-border-color;
+            height: 50px;
+        }
+    }
+}
+
+.alerts {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.alert-info {
+    border: 1px solid darken($alert-info-bg, 15%);
+    position: relative;
+
+    @include alert($alert-info-bg, $alert-info-text-color);
+
+    .close-btn {
+        background: url(../../img/info-close-btn.png) no-repeat;
+        width: 9px;
+        height: 9px;
+    }
+}
+
+.alert-success {
+    border: 1px solid darken($alert-success-bg, 15%);
+    position: relative;
+
+    @include alert($alert-info-bg, $alert-success-text-color);
+
+    .close-btn {
+        background: url(../../img/success-close-btn.png) no-repeat;
+        width: 9px;
+        height: 9px;
+    }
+}
+
+.alert-warning {
+    border: 1px solid darken($alert-warning-bg, 15%);
+    position: relative;
+
+    @include alert($alert-info-bg, $alert-warning-text-color);
+
+    .close-btn {
+        background: url(../../img/warning-close-btn.png) no-repeat;
+        width: 9px;
+        height: 9px;
+    }
+}
+
+.alert-error {
+    border: 1px solid darken($alert-error-bg, 15%);
+    position: relative;
+
+    @include alert($alert-error-bg, $alert-error-text-color);
+
+    .close-btn {
+        background: url(../../img/error-close-btn.png) no-repeat;
+        width: 9px;
+        height: 9px;
+    }
+}
+
+.alert-caution {
+    border: 1px solid #FFD012;
+    position: relative;
+
+    @include size(456px, 60px);
+
+    .caution-icon {
+        position: absolute;
+        top: 13px;
+        left: 23px;
+
+        background: url(../../img/caution-icon.png) no-repeat;
+        width: 35px;
+        height: 31px;
+    }
+
+    .desc {
+        line-height: 60px;
+        margin-left: 80px;
+
+        @include font($secondary-font, $sm-font-size, $medium-text-color);
+    }
+}
+
+.alert-announcement {
+
+}
+
+.alert-app-error {
+
+}
