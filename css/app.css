@@ -197,5 +197,97 @@
     font-size: 14px;
     color: #989898; }
 
+.alert-announcement {
+  width: 458px;
+  height: 139px;
+  background-color: #fff;
+  border: 1px solid #D0D7DD;
+  position: relative;
+  top: 50px;
+  left: 50px; }
+  .alert-announcement .icon-bg {
+    width: 122px;
+    height: 137px;
+    background-color: #F4F7F9;
+    position: relative;
+    float: left; }
+    .alert-announcement .icon-bg .mic-icon {
+      background: url(../../img/mic-icon.png) no-repeat;
+      width: 27px;
+      height: 58px;
+      position: absolute;
+      top: 39px;
+      left: 50px; }
+  .alert-announcement .info {
+    float: left;
+    padding-left: 32px;
+    padding-top: 28px; }
+    .alert-announcement .info .desc {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      color: #989898;
+      margin-top: 10px;
+      line-height: 26px; }
+
+.sm-close-btn {
+  background: url(../../img/small-close-icon.png);
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 16px;
+  right: 20px; }
+
+.alert-title {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 22px;
+  color: #323C47; }
+
+.alert-app-error {
+  width: 458px;
+  height: 212px;
+  border: 1px solid #D0D7DD;
+  position: relative;
+  left: 50px;
+  top: 70px; }
+  .alert-app-error .icon {
+    float: left; }
+    .alert-app-error .icon .lg-error-icon {
+      background: url(../../img/lg-error-icon.png) no-repeat;
+      width: 46px;
+      height: 50px;
+      position: absolute;
+      top: 36px;
+      left: 34px; }
+  .alert-app-error .info {
+    float: left;
+    position: relative;
+    top: 35px;
+    left: 110px; }
+    .alert-app-error .info .desc {
+      line-height: 28px;
+      margin-top: 20px;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      color: #989898; }
+  .alert-app-error .send-report-btn {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #323C47;
+    text-transform: uppercase;
+    position: absolute;
+    border: 1px solid #D0D7DD;
+    width: 152px;
+    height: 39px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    line-height: 39px;
+    top: 152px;
+    left: 111px; }
+
+.clear {
+  clear: both; }
+
 .task-list-main .header {
   background: #F4F7F9; }
