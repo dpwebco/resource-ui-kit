@@ -6,7 +6,11 @@ $(document).ready(function() {
         $(this).parent().remove();
     });
 
-    $('.sm-close-btn').on('click', function () {
-        $(this).parent().parent().remove();
-    })
+    $('#alert-app-error').on('click', function () {
+        $(this).parent().remove();
+    });
+
+    $('#alert-announcement').on('click', function () {
+        $(this).parent().remove();
+    });
 });
