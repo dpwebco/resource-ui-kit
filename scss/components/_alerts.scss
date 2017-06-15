@@ -194,6 +194,10 @@
     top: 16px;
     right: 20px;
 
+    &:hover {
+        cursor: pointer;
+    }
+
 }
 .alert-title {
     @include font($base-font, 22, $dark-text-color);
