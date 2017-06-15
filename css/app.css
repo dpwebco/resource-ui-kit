@@ -273,20 +273,20 @@
       color: #989898; }
   .alert-app-error .send-report-btn {
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    color: #323C47;
     text-transform: uppercase;
     position: absolute;
+    top: 152px;
+    left: 111px;
     border: 1px solid #D0D7DD;
-    width: 152px;
-    height: 39px;
     display: inline-block;
     font-weight: bold;
     text-align: center;
     line-height: 39px;
-    top: 152px;
-    left: 111px; }
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #323C47;
+    width: 152px;
+    height: 39px; }
 
 .clear {
   clear: both; }
