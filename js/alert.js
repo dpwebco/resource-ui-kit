@@ -5,4 +5,8 @@ $(document).ready(function() {
     $('.close-btn').on('click', function() {
         $(this).parent().remove();
     });
+
+    $('.sm-close-btn').on('click', function () {
+        $(this).parent().parent().remove();
+    })
 });

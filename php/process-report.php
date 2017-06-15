@@ -13,3 +13,6 @@ class error_reporter {
         return $this->error_id;
     }
 }
+
+$reporter = new error_reporter();
+$reporter->getErrorId();
