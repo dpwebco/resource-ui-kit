@@ -1,19 +1,19 @@
 /**
  * Created by Darrell on 06/14/2017.
  */
-// $(document).ready(function() {
-//     $('.close-btn').on('click', function() {
-//         $(this).parent().remove();
-//     });
-//
-//     $('#alert-app-error').on('click', function () {
-//         $(this).parent().remove();
-//     });
-//
-//     $('#alert-announcement').on('click', function () {
-//         $(this).parent().remove();
-//     });
-// });
+
+ function inherits(ctor, superCtor) {
+  ctor.super_ = superCtor;
+  ctor.prototype = Object.create(superCtor.prototype, {
+    constructor: {
+      value: ctor,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+};
+
 
 var alert = {
     init: function () {
@@ -43,3 +43,11 @@ var alert = {
 };
 
 alert.init();
+
+var test = {
+    init: function() {
+        
+    }
+};
+
+test.init();
