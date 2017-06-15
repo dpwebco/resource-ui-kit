@@ -236,6 +236,8 @@
   position: absolute;
   top: 16px;
   right: 20px; }
+  .sm-close-btn:hover {
+    cursor: pointer; }
 
 .alert-title {
   font-family: "Maven Pro", sans-serif;
