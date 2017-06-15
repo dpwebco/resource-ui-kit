@@ -239,19 +239,23 @@
 
     .send-report-btn {
         text-decoration: none;
-        @include font($secondary-font, $sm-font-size, $dark-text-color);
         text-transform: uppercase;
+
         position: absolute;
+        top: 152px;
+        left: 111px;
+        
         border: 1px solid $base-border-color;
 
-        @include size(152px, 39px);
         display: inline-block;
         font-weight: bold;
         text-align: center;
         line-height: 39px;
 
-        top: 152px;
-        left: 111px;
+
+
+        @include font($secondary-font, $sm-font-size, $dark-text-color);
+        @include size(152px, 39px);
     }
 }
 
