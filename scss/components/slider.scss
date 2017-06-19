@@ -1,0 +1,55 @@
+body {
+    background-color: #F3F6F8;
+}
+.sliders {
+    width: 1170px;
+    margin: 50px auto 0 auto;
+    height: 439px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+$gradient-start-color: #57B6FA;
+$gradient-stop-color: #55D2FC;
+
+.first-slider {
+    .slider-bg {
+        width: 255px;
+        height: 8px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        border-radius: 4px;
+        background-color: #e9eff4;
+
+        .sldr-progress {
+            width: 137px;
+            height: 8px;
+            background: $gradient-start-color;
+            background: linear-gradient(to right, $gradient-start-color, $gradient-stop-color);
+            position: relative;
+            border-radius: 5px;
+
+            .sldr-indicator {
+                width: 15px;
+                height: 15px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                border-radius: 8px;
+                position: absolute;
+                top: -4px;
+                right: 0;
+
+                .center {
+                    width: 7px;
+                    height: 7px;
+                    background-color: #4DA1FF;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}
