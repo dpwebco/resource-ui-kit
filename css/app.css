@@ -293,3 +293,54 @@
 
 .task-list-main .header {
   background: #F4F7F9; }
+
+body {
+  background-color: #F3F6F8; }
+
+.sliders {
+  width: 1170px;
+  margin: 50px auto 0 auto;
+  height: 439px;
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+  background-color: #fff; }
+
+.first-slider .slider-bg {
+  width: 255px;
+  height: 8px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  border-radius: 4px;
+  background-color: #e9eff4; }
+  .first-slider .slider-bg .sldr-progress {
+    width: 137px;
+    height: 8px;
+    background: #57B6FA;
+    background: -webkit-gradient(linear, left top, right top, from(#57B6FA), to(#55D2FC));
+    background: -webkit-linear-gradient(left, #57B6FA, #55D2FC);
+    background: -o-linear-gradient(left, #57B6FA, #55D2FC);
+    background: linear-gradient(to right, #57B6FA, #55D2FC);
+    position: relative;
+    border-radius: 5px; }
+    .first-slider .slider-bg .sldr-progress .sldr-indicator {
+      width: 15px;
+      height: 15px;
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      position: absolute;
+      top: -4px;
+      right: 0; }
+      .first-slider .slider-bg .sldr-progress .sldr-indicator .center {
+        width: 7px;
+        height: 7px;
+        background-color: #4DA1FF;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-radius: 100%; }
