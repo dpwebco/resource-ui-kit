@@ -27,7 +27,8 @@ $(document).ready(function() {
                 }, {
                     duration: 300,
                     queue: false,
-                    easing: 'easeInOutQuad' });
+                    easing: 'easeInOutQuad'
+                });
             }
         }
     });
