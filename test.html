@@ -10,7 +10,12 @@
     <script src="js/lib/jquery.magnific.js"></script>
     <script>
         $('#test').magnificPopup({
-            contentLoaded: magnificPopup.ajaxContentAdded(mfpResponse)
+            contentLoaded: magnificPopup.ajaxContentAdded()
+        });
+
+        $('#another-test').hammer();
+        $('.section').parallax({
+
         })
     </script>
 </body>
