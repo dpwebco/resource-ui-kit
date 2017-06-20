@@ -3,3 +3,89 @@
         background: #F4F7F9;
     }
 }
+
+.task-list-desc {
+
+    width: 1140px;
+    height: 787px;
+    margin: 0 auto;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+
+    header {
+        width: 100%;
+        height: 75px;
+        border-bottom: 1px solid #E9EFF4;
+    }
+    .profile {
+        position: absolute;
+        top: 18px;
+        left: 65px;
+        width: 160px;
+
+        .username {
+            position: absolute;
+            width: 90px;
+            left: 50px;
+            top: 10px;
+            color: #989898;
+        }
+    }
+
+    .meta {
+        color: #989898;
+        position: absolute;
+        width: 150px;
+        left: 227px;
+        top: 24px;
+
+        .clock-icon {
+            background: url(../../img/task/clock-icon.png) no-repeat;
+            width: 22px;
+            height: 23px;
+            float: left;
+        }
+
+        .date {
+            position: relative;
+            left: 10px;
+            line-height: 23px;
+        }
+    }
+
+    .utility {
+        position: absolute;
+        right: 20px;
+        width: 180px;
+        top: 13px;
+        .attachment-icon {
+            background: url(../../img/task/attach.png) no-repeat;
+            width: 22px;
+            height: 26px;
+        }
+        .share-icon {
+            background: url(../../img/task/share.png) no-repeat;
+            width: 22px;
+            height: 11px;
+        }
+
+        .menu-toggle {
+            background: url(../../img/task/menu.png) no-repeat;
+            width: 22px;
+            height: 5px;
+        }
+        .icon-list {
+            list-style: none;
+
+            .icon-list-item {
+                display: inline-block;
+                margin-right: 30px;
+                &:nth-child(1) {
+                    position: relative;
+                    top: 5px;
+                }
+            }
+        }
+    }
+}
