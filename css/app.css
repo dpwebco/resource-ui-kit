@@ -356,6 +356,85 @@
         .task-list-desc .utility .icon-list .icon-list-item:nth-child(1) {
           position: relative;
           top: 5px; }
+  .task-list-desc .task-body {
+    width: 567px;
+    margin: 30px auto 0 auto; }
+    .task-list-desc .task-body .task-title {
+      float: left;
+      font-family: "Maven Pro", sans-serif;
+      color: #323C47;
+      font-size: 23px; }
+    .task-list-desc .task-body .priority {
+      background-color: #ff6d4b;
+      display: inline-block;
+      color: #fff;
+      padding: 6px 10px;
+      text-transform: uppercase;
+      margin-left: 10px;
+      font-weight: bold;
+      font-family: "Roboto", sans-serif;
+      font-size: 11px;
+      border-radius: 4px; }
+    .task-list-desc .task-body .desc {
+      font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      color: #989898;
+      line-height: 26px;
+      margin-top: 20px; }
+  .task-list-desc .task-comments {
+    width: 100%;
+    margin-top: 76px;
+    border-top: 1px solid #E9EFF4; }
+    .task-list-desc .task-comments .comment-list {
+      list-style: none;
+      width: 683px;
+      margin: 30px auto 0 auto; }
+    .task-list-desc .task-comments .comment-list-item {
+      margin-bottom: 30px; }
+      .task-list-desc .task-comments .comment-list-item .avatar {
+        float: left; }
+      .task-list-desc .task-comments .comment-list-item .commenter-name {
+        text-transform: uppercase;
+        position: relative;
+        left: 20px;
+        float: left;
+        font-family: "Roboto", sans-serif; }
+      .task-list-desc .task-comments .comment-list-item .comment-date {
+        float: left;
+        position: relative;
+        left: 30px;
+        color: #989898; }
+      .task-list-desc .task-comments .comment-list-item .comment {
+        line-height: 26px;
+        margin-left: 50px;
+        font-size: 14px;
+        color: #989898; }
+      .task-list-desc .task-comments .comment-list-item .task-comment-form .comment-task {
+        width: 100%;
+        height: 86px;
+        border: none;
+        padding: 20px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #F4F7F9;
+        resize: none; }
+        .task-list-desc .task-comments .comment-list-item .task-comment-form .comment-task::-webkit-input-placeholder {
+          font-family: "Roboto", sans-serif; }
+      .task-list-desc .task-comments .comment-list-item .task-comment-form .task-comment-submit {
+        border: none;
+        width: 165px;
+        height: 39px;
+        background-color: #4DA1FF;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+        float: right;
+        margin-top: 20px;
+        border-radius: 5px;
+        outline: 0; }
+        .task-list-desc .task-comments .comment-list-item .task-comment-form .task-comment-submit:hover {
+          cursor: pointer; }
 
 body {
   background-color: #F3F6F8; }
