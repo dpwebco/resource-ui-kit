@@ -294,6 +294,69 @@
 .task-list-main .header {
   background: #F4F7F9; }
 
+.task-list-desc {
+  width: 1140px;
+  height: 787px;
+  margin: 0 auto;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff; }
+  .task-list-desc header {
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #E9EFF4; }
+  .task-list-desc .profile {
+    position: absolute;
+    top: 18px;
+    left: 65px;
+    width: 160px; }
+    .task-list-desc .profile .username {
+      position: absolute;
+      width: 90px;
+      left: 50px;
+      top: 10px;
+      color: #989898; }
+  .task-list-desc .meta {
+    color: #989898;
+    position: absolute;
+    width: 150px;
+    left: 227px;
+    top: 24px; }
+    .task-list-desc .meta .clock-icon {
+      background: url(../../img/task/clock-icon.png) no-repeat;
+      width: 22px;
+      height: 23px;
+      float: left; }
+    .task-list-desc .meta .date {
+      position: relative;
+      left: 10px;
+      line-height: 23px; }
+  .task-list-desc .utility {
+    position: absolute;
+    right: 20px;
+    width: 180px;
+    top: 13px; }
+    .task-list-desc .utility .attachment-icon {
+      background: url(../../img/task/attach.png) no-repeat;
+      width: 22px;
+      height: 26px; }
+    .task-list-desc .utility .share-icon {
+      background: url(../../img/task/share.png) no-repeat;
+      width: 22px;
+      height: 11px; }
+    .task-list-desc .utility .menu-toggle {
+      background: url(../../img/task/menu.png) no-repeat;
+      width: 22px;
+      height: 5px; }
+    .task-list-desc .utility .icon-list {
+      list-style: none; }
+      .task-list-desc .utility .icon-list .icon-list-item {
+        display: inline-block;
+        margin-right: 30px; }
+        .task-list-desc .utility .icon-list .icon-list-item:nth-child(1) {
+          position: relative;
+          top: 5px; }
+
 body {
   background-color: #F3F6F8; }
 
