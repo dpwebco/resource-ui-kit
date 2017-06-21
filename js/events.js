@@ -30,11 +30,45 @@ var event = {
 var people = ['bobby'];
 /**
  * every object with a setPeople will be updated
- * @param count
- * @returns {*}
+ *
+ * @returns void
  */
-function setPeople(count) {
-    return count;
+function setPeople() {
 }
 //event.emit('peopleChanged', people.length);
 event.on('peopleChange', setPeople());
+
+var customEvent = {};
+
+function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor;
+    ctor.prototype = Object.create(superCtor.prototype, {
+        constructor: {
+            value: ctor,
+            enumerable: false,
+            writable: true,
+            configurable: true
+        }
+    });
+}
+
+inherits(customEvent, event);
+customEvent.on('btn.clicked', function(el, data, err) {
+    if (err) {
+        throw new Error('');
+    }
+
+    this.el = $(el);
+});
+
+var Modal = {
+    resize: function() {
+        if (this.isShown) {
+            customEvent.on('resize.bs.modal', function() {
+
+            });
+        }
+    },
+    handleUpdate: function() {},
+      
+};
