@@ -4,10 +4,14 @@
 var widget = {
     init: function() {
         this.cacheDom();
+        this.html5Video();
+        this.ytBgVideo();
     },
     cacheDom: function() {
         this.$flexSliderContainer = $('.fslider:not(.custom-js)');
         this.$flexSliderEl = $('.flexslider');
+        this.videoContainer = $('.video-container:has(video)');
+        this.ytBgPlayerEl = $('.yt-bg-player');
     },
     loadFlexSlider: function () {
         if (this.$flexSliderEl.length > 0) {
@@ -45,5 +49,106 @@ var widget = {
         }
     },
 
-    masonryThumbs: function() {}
+    masonryThumbs: function() {},
+
+    html5Video: function() {
+        if (this.videoContainer.length > 0) {
+            this.videoContainer.each(function() {
+                var elem = $(this),
+                    elemVideo = elem.find('video'),
+                    outerContainerWidth = elemVideo.outerWidth(),
+                    outerContainerHeight = elemVideo.outerHeight(),
+                    innerVideoWidth = elemVideo.outerWidth(),
+                    innerVideoHeight = elemVideo.outerHeight();
+
+                if (innerVideoHeight < outerContainerHeight) {
+                    var videoAspectRatio = innerVideoWidth / innerVideoHeight,
+                        newVideoWidth = outerContainerHeight * videoAspectRatio,
+                        innerVideoHPos = (newVideoWidth - outerContainerWidth) / 2;
+
+                    elemVideo.css({
+                        'width': newVideoWidth + 'px',
+                        'height': innerVideoHeight + 'px',
+                        'left': -innerVideoHPos + 'px'
+                    });
+                } else {
+                    var innerVideoVPos = (innerVideoHeight - outerContainerHeight) / 2;
+                    elemVideo.css({
+                        'width': innerVideoWidth + 'px',
+                        'height': innerVideoHeight + 'px',
+                        'top': -innerVideoVPos + 'px'
+                    });
+                }
+
+                if (isMobile.any() && !elem.hasClass('no-placeholder')) {
+                    var placeholderImg = elemVideo.attr('poster');
+
+                    if (placeholderImg !== '') {
+                        elem.append('' +
+                            '<div class="video-placeholder"> style="background-image: url(' + placeholderImg + ');"></div>')
+                    }
+
+                    elemVideo.hide();
+                }
+            });
+        }
+    },
+
+    ytBgVideo: function() {
+        if (!$.mbYTPlayer) {
+            console.log('YoutubeBgVideo: YoutubeBG Plugin not defined');
+            return true;
+        }
+
+        if (this.ytBgPlayerEl.length > 0) {
+            this.ytBgPlayerEl.each(function() {
+                var elem = $(this),
+                    ytbgVideo = elem.attr('data-video'),
+                    ytbgMute = elem.attr('data-mute'),
+                    ytbgRatio = elem.attr('data-ratio'),
+                    ytbgQuality = elem.attr('data-quality'),
+                    ytbgOpacity = elem.attr('data-opacity'),
+                    ytbgContainer = elem.attr('data-container'),
+                    ytbgOptimize = elem.attr('data-optimize'),
+                    ytbgLoop = elem.attr('data-loop'),
+                    ytbgVolume = elem.attr('data-volume'),
+                    ytbgStart = elem.attr('data-start'),
+                    ytbgStop = elem.attr('data-stop'),
+                    ytbgAutoPlay = elem.attr('data-autoplay'),
+                    ytbgFullScreen = elem.attr('data-fullscreen');
+
+                if (ytbgMute === 'false') {
+                    ytbgMute = false
+                } else {
+                    ytbgMute = true;
+                }
+
+                if (!ytbgRatio) {
+                    ytbgRatio = '16/9';
+                }
+
+                if (!ytbgQuality) {
+                    ytbgQuality = 'hd720';
+                }
+
+                if (!ytbgOpacity) {
+                    ytbgOpacity = 1;
+                }
+
+                if (!ytbgContainer) {
+                    ytbgContainer = 'self';
+                }
+
+                if (ytbgOptimize === 'false') {
+                    ytbgOptimize = false;
+                }
+
+                if (ytbgLoop === 'false') {
+                    ytbgLoop = false;
+                }
+
+
+            })
+        }
+    }
 };
