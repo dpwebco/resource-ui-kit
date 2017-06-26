@@ -486,3 +486,6 @@ body {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         border-radius: 100%; }
+
+.price-table-four {
+  padding: 120px 0; }
