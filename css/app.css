@@ -60,7 +60,6 @@
 
 .alert-info {
   border: 1px solid #a6cfff;
-  position: relative;
   background: #F2F8FF;
   padding-left: 22px;
   margin-bottom: 20px;
@@ -489,3 +488,135 @@ body {
 
 .price-table-four {
   padding: 120px 0; }
+  .price-table-four .section-title {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 42px;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center; }
+  .price-table-four .price-table-container {
+    background-color: #fff;
+    width: 879px;
+    height: 461px;
+    position: relative;
+    margin: 0 auto;
+    top: 99px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15); }
+  .price-table-four .personal,
+  .price-table-four .popular,
+  .price-table-four .corporate {
+    position: absolute; }
+  .price-table-four .personal {
+    left: 61px; }
+  .price-table-four .corporate {
+    right: 61px; }
+  .price-table-four .personal,
+  .price-table-four .corporate {
+    width: 169px;
+    top: 63px; }
+  .price-table-four .popular {
+    left: 259.5px;
+    top: -56px;
+    width: 360px;
+    height: 549px;
+    background-color: #fff;
+    border: 1px solid #ddd; }
+    .price-table-four .popular .plan-title {
+      margin-top: 89px; }
+    .price-table-four .popular .features-list {
+      left: 93px;
+      position: absolute; }
+    .price-table-four .popular .buy-btn {
+      position: absolute;
+      left: 93px;
+      top: 400px;
+      border-color: #4DA1FF;
+      background-color: #4DA1FF;
+      color: #fff; }
+    .price-table-four .popular .feature-text {
+      text-transform: capitalize; }
+    .price-table-four .popular .label {
+      width: 82px;
+      height: 20px;
+      background-color: #FFD012;
+      border-radius: 10px;
+      position: absolute;
+      right: 28px;
+      top: 22px;
+      font-family: "Roboto", sans-serif;
+      font-size: 12px;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 18px;
+      font-weight: bold; }
+    .price-table-four .popular .price {
+      left: 95px;
+      top: -20px;
+      position: relative; }
+      .price-table-four .popular .price .price-value {
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        font-size: 100px;
+        color: #000; }
+      .price-table-four .popular .price .dollar-sign {
+        left: 0px;
+        top: -50px; }
+      .price-table-four .popular .price .per-month {
+        position: relative;
+        right: 0px; }
+  .price-table-four .features-list {
+    list-style: none;
+    margin-top: 25px; }
+    .price-table-four .features-list .feature-item {
+      margin-bottom: 20px; }
+      .price-table-four .features-list .feature-item .icon {
+        float: left;
+        margin-right: 20px; }
+      .price-table-four .features-list .feature-item .feature-text {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        color: #989898; }
+  .price-table-four .buy-btn {
+    text-decoration: none;
+    width: 166px;
+    height: 40px;
+    border: 1px solid #D0D7DD;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #323C47;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 25px; }
+  .price-table-four .plan-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 33px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #323C47; }
+  .price-table-four .price .dollar-sign {
+    font-weight: 600;
+    position: relative;
+    top: -40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    color: #323C47; }
+  .price-table-four .price .price-value {
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-size: 80px;
+    color: #323C47; }
+  .price-table-four .price .per-month {
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    color: #323C47; }
+
+* {
+  -webkit-font-smoothing: antialiased; }
