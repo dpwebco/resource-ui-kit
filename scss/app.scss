@@ -1,11 +1,11 @@
 @import "partials/vars";
-
+@import "partials/base";
 @import "components/alerts";
 @import "components/tasks";
 @import "components/slider";
 @import "components/pricing-tables";
 @import "components/custom-checkbox";
-
+@import "components/subscriptions";
 * {
     -webkit-font-smoothing: antialiased;
 }
