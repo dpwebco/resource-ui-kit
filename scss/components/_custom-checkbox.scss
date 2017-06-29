@@ -1,7 +1,11 @@
+@import "../partials/vars";
+@import "../partials/mixins";
+
 label {
     display: inline-block;
     cursor: pointer;
     position: relative;
+
 
     input {
         &[type="checkbox"] {
@@ -12,6 +16,8 @@ label {
                     content: url(../../img/subscribe/unchecked.png);
                     width: 23px;
                     height: 23px;
+                    position: absolute;
+                    top: 0;
                 }
             }
 
@@ -25,5 +31,10 @@ label {
                 }
             }
         }
+    }
+
+    .text {
+        margin-left: 40px;
+        @include font($secondary-font, $md-font-size, $medium-text-color);
     }
 }
