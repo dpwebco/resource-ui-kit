@@ -70,7 +70,6 @@
 }
 .alert-info {
     border: 1px solid darken($alert-info-bg, 15%);
-    position: relative;
 
     @include alert($alert-info-bg, $alert-info-text-color);
 
