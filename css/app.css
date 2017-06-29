@@ -618,5 +618,20 @@ body {
     font-size: 26px;
     color: #323C47; }
 
+label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative; }
+  label input[type="checkbox"] {
+    display: none; }
+    label input[type="checkbox"] + .label-text:before {
+      content: url(../../img/subscribe/unchecked.png);
+      width: 23px;
+      height: 23px; }
+    label input[type="checkbox"]:checked + .label-text:before {
+      content: url(../../img/subscribe/checked.png);
+      width: 23px;
+      height: 23px; }
+
 * {
   -webkit-font-smoothing: antialiased; }
