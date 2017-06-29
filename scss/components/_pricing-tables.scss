@@ -1,3 +1,172 @@
+@import "../partials/vars";
+@import "../partials/mixins";
 .price-table-four {
     padding: 120px 0;
+
+    .section-title {
+        @include font($base-font, 42, #000);
+
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .price-table-container {
+        background-color: #fff;
+        width: 879px;
+        height: 461px;
+        position: relative;
+        margin: 0 auto;
+        top: 99px;
+        @include box-shadow();
+    }
+
+    .personal,
+    .popular,
+    .corporate {
+        position: absolute;
+    }
+
+    .personal {
+        left: 61px;
+    }
+
+    .corporate {
+        right: 61px;
+
+    }
+
+    .personal,
+    .corporate {
+        width: 169px;
+        top: 63px;
+    }
+
+    .popular {
+        left: (879px - 360px) / 2;
+        top: -56px;
+        width: 360px;
+        height: 549px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        .plan-title {
+            margin-top: 89px;
+
+        }
+
+        .features-list {
+            left: 93px;
+            position: absolute;
+
+            .feature-item {
+                //margin-bottom: 30px;
+            }
+        }
+
+        .buy-btn {
+            position: absolute;
+            left: 93px;
+            top: 400px;
+            border-color: #4DA1FF;
+            background-color: #4DA1FF;
+            color: #fff;
+        }
+
+        .feature-text {
+            text-transform: capitalize;
+        }
+
+        .label {
+            width: 82px;
+            height: 20px;
+            background-color: $price-table-tag-bg;
+            border-radius: 10px;
+            position: absolute;
+            right: 28px;
+            top: 22px;
+
+            @include font($secondary-font, 12, #fff);
+
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 18px;
+            font-weight: bold;
+        }
+        .price {
+            .price-value {
+                font-weight: 500;
+                @include font($secondary-font, 100, #000);
+            }
+            left: 95px;
+            top: -20px;
+            position: relative;
+            .dollar-sign {
+                left: 0px;
+                top: -50px;
+            }
+
+            .per-month {
+                position: relative;
+                right:0px;
+            }
+        }
+    }
+
+    .features-list  {
+        list-style: none;
+        margin-top: 25px;
+        .feature-item {
+            margin-bottom: 20px;
+            .icon {
+                float: left;
+                margin-right: 20px;
+            }
+
+            .feature-text {
+                @include font($secondary-font, 16, $medium-text-color);
+            }
+        }
+    }
+
+    .buy-btn {
+        text-decoration: none;
+        width: 166px;
+        height: 40px;
+        border: 1px solid #D0D7DD;
+        display: inline-block;
+
+        @include font($secondary-font, 14, #323C47);
+
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        line-height: 40px;
+        margin-top: 25px;
+    }
+
+    .plan-title {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 33px;
+        @include font($secondary-font, 14, #323C47);
+    }
+
+    .price {
+
+        .dollar-sign {
+            font-weight: 600;
+            position: relative;
+            top: -40px;
+            @include font($secondary-font, 26, #323C47)
+        }
+        .price-value {
+            font-weight: 600;
+            @include font($secondary-font, 80, #323C47)
+        }
+
+        .per-month {
+            font-weight: 600;
+            @include font($secondary-font, 26, #323C47);
+        }
+    }
 }
