@@ -1,0 +1,87 @@
+@import "../partials/vars";
+@import "../partials/mixins";
+
+.subscription-four {
+    width: 100%;
+    padding: 102px 0;
+    background-color: #fff;
+}
+.subscription-five {
+    width: 100%;
+    height: 1040px;
+    background-color: $subscript-sect-five-bg;
+
+    .inner {
+        width: 673px;
+        height: 325px;
+        box-sizing: border-box;
+        position: absolute;
+        background-color: #fff;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header {
+        width: 100%;
+        height: 116px;
+        border-bottom: 1px solid #E9EFF4;
+        text-align: center;
+
+        .title {
+            line-height: 116px;
+            @include font($base-font, 30, $dark-text-color);
+        }
+    }
+
+    .desc {
+        @include font($secondary-font, $md-font-size, $medium-text-color);
+
+        text-align: center;
+        margin: 25px 0 33px 0;
+        font-weight: bold;
+    }
+    .features-list {
+        list-style: none;
+        margin-left: 101px;
+    }
+
+    .feature-list-item {
+        display: inline-block;
+        margin-right: 33px;
+    }
+
+    .subscription-form {
+        position: absolute;
+        bottom: 0;
+        width: 673px;
+        height: 66px;
+        background-color: #F4F7F9;
+        border-top: 1px solid darken(#f4f7f9, 10%);
+
+        input {
+            height: 50px;
+            width: 550px;
+            display: block;
+            text-indent: 20px;
+            margin-top: 8px;
+            margin-left: 30px;
+            background-color: transparent;
+            outline: none;
+            @include font($secondary-font, 16, $medium-text-color);
+
+            &::-webkit-input-placeholder {
+                @include font($secondary-font, 16, $medium-text-color);
+                font-weight: normal;
+            }
+        }
+
+        .subscribe-icon {
+            position: absolute;
+            background: url(../../img/subscribe/subscribe-email-icon.png) no-repeat;
+            width: 16px;
+            height: 16px;
+            right: 30px;
+            top: 25px;
+        }
+    }
+}
