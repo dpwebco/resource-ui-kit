@@ -1,6 +1,9 @@
 body.subscription-sect-five {
   background-color: #FC6E4F; }
 
+input {
+  border: none; }
+
 * {
   margin: 0;
   padding: 0;
@@ -624,8 +627,7 @@ body {
 label {
   display: inline-block;
   cursor: pointer;
-  position: relative;
-  width: 150px; }
+  position: relative; }
   label input[type="checkbox"] {
     display: none; }
     label input[type="checkbox"] + .label-text:before {
@@ -647,10 +649,69 @@ label {
 .subscription-five {
   width: 673px;
   height: 325px;
-  padding: 50px 0 0 50px;
   background-color: #fff;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  .subscription-five .header {
+    width: 100%;
+    height: 116px;
+    border-bottom: 1px solid #E9EFF4;
+    text-align: center; }
+    .subscription-five .header .title {
+      line-height: 116px;
+      font-family: "Maven Pro", sans-serif;
+      font-size: 30px;
+      color: #323C47; }
+  .subscription-five .desc {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #989898;
+    text-align: center;
+    margin: 25px 0 33px 0;
+    font-weight: bold; }
+  .subscription-five .features-list {
+    list-style: none;
+    margin-left: 101px; }
+  .subscription-five .feature-list-item {
+    display: inline-block;
+    margin-right: 33px; }
+  .subscription-five .subscription-form {
+    position: absolute;
+    bottom: 0;
+    width: 673px;
+    height: 66px;
+    background-color: #F4F7F9;
+    border-top: 1px solid #d3dfe7; }
+    .subscription-five .subscription-form input {
+      height: 50px;
+      width: 550px;
+      display: block;
+      text-indent: 20px;
+      margin-top: 8px;
+      margin-left: 30px;
+      background-color: transparent;
+      outline: none;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      color: #989898; }
+      .subscription-five .subscription-form input::-webkit-input-placeholder {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        color: #989898;
+        font-weight: normal; }
+    .subscription-five .subscription-form .subscribe-icon {
+      position: absolute;
+      background: url(../../img/subscribe/subscribe-email-icon.png) no-repeat;
+      width: 16px;
+      height: 16px;
+      right: 30px;
+      top: 25px; }
 
 * {
   -webkit-font-smoothing: antialiased; }
