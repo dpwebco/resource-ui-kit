@@ -1,3 +1,6 @@
+body.subscription-sect-five {
+  background-color: #FC6E4F; }
+
 * {
   margin: 0;
   padding: 0;
@@ -621,17 +624,33 @@ body {
 label {
   display: inline-block;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  width: 150px; }
   label input[type="checkbox"] {
     display: none; }
     label input[type="checkbox"] + .label-text:before {
       content: url(../../img/subscribe/unchecked.png);
       width: 23px;
-      height: 23px; }
+      height: 23px;
+      position: absolute;
+      top: 0; }
     label input[type="checkbox"]:checked + .label-text:before {
       content: url(../../img/subscribe/checked.png);
       width: 23px;
       height: 23px; }
+  label .text {
+    margin-left: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #989898; }
+
+.subscription-five {
+  width: 673px;
+  height: 325px;
+  padding: 50px 0 0 50px;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 * {
   -webkit-font-smoothing: antialiased; }
