@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Subscriptions</title>
+
+    <!-- stylesheets --->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <section class="subscription-four"></section>
+    <section class="subscription-five">
+        <div class="inner">
+        <div class="header">
+            <div class="title">Subscribe to our newsletter</div>
+        </div>
+        <p class="desc">
+            Choose what you want to receive
+        </p>
+        <ul class="features-list">
+            <li class="feature-list-item">
+                <label>
+                    <input type="checkbox" checked>
+                    <span class="label-text"></span>
+                    <span class="text">About updates</span>
+                </label>
+            </li>
+            <li class="feature-list-item">
+                <label>
+                    <input type="checkbox" checked>
+                    <span class="label-text"></span>
+                    <span class="text">Weekly news</span>
+                </label>
+            </li>
+            <li class="feature-list-item">
+                <label>
+                    <input type="checkbox" checked>
+                    <span class="label-text"></span>
+                    <span class="text">Monthly digest</span>
+                </label>
+            </li>
+        </ul>
+        <form action="php/subscribe.php" class="subscription-form">
+            <div class="subscribe-icon"></div>
+            <input type="email" placeholder="E-mail address">
+        </form>
+        </div>
+    </section>
+</body>
+</html>
