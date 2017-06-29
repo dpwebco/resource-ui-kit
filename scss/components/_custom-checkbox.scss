@@ -1,0 +1,29 @@
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+
+    input {
+        &[type="checkbox"] {
+            display: none;
+
+            + .label-text {
+                &:before {
+                    content: url(../../img/subscribe/unchecked.png);
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+
+            &:checked {
+                + .label-text {
+                    &:before {
+                        content: url(../../img/subscribe/checked.png);
+                        width: 23px;
+                        height: 23px;
+                    }
+                }
+            }
+        }
+    }
+}
