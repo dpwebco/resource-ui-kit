@@ -4,3 +4,7 @@
 @import "components/tasks";
 @import "components/slider";
 @import "components/pricing-tables";
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
