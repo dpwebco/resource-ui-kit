@@ -20,6 +20,11 @@
     height: $height;
 }
 
+@mixin size-full-width($height) {
+    width: 100%;
+    height: $height * 1px;
+}
+
 @mixin alert($bg-color, $text-color) {
     background: $bg-color;
 
