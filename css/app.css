@@ -922,6 +922,108 @@ label .text {
   color: #4DA1FF;
 }
 
+.subscription-one .inner .info {
+  width: 298px;
+  height: 19px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #989898;
+  line-height: 19px;
+  margin: 22px auto 0 auto;
+}
+
+.subscription-one .inner .info .info-icon {
+  background: url(../../img/subscribe/info-icon.png) no-repeat;
+  width: 14px;
+  height: 19px;
+  float: left;
+  margin-right: 7px;
+}
+
+.subscription-two {
+  padding: 127px 0;
+  background-color: #fff;
+}
+
+.subscription-two .inner {
+  width: 560px;
+  height: 197px;
+  margin: 0 auto;
+}
+
+.subscription-two .inner .subscription-form {
+  width: 454px;
+  height: 51px;
+  margin: 30px auto  0 auto;
+}
+
+.subscription-two .inner .subscription-form .input-bg {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #D0D7DD;
+  border-radius: 5px;
+}
+
+.subscription-two .inner .subscription-form .submit-btn {
+  float: right;
+  background-color: #4DA1FF;
+  border-radius: 0 5px 5px 0;
+  width: 129px;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+  margin-top: -1px;
+}
+
+.subscription-two .inner .subscription-form input[type="email"] {
+  height: 48px;
+  text-indent: 20px;
+}
+
+.subscription-two .inner .subscription-form input[type="email"]::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #989898;
+}
+
+.subscription-two .inner .social {
+  width: 248px;
+  height: 19px;
+  margin: 20px auto 0 auto;
+}
+
+.subscription-two .inner .social .text {
+  float: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #D1D8DE;
+}
+
+.subscription-two .inner .social .social-list {
+  list-style: none;
+  position: relative;
+  left: 20px;
+}
+
+.subscription-two .inner .social .social-list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.subscription-two .inner .social .social-list li i {
+  font-size: 14px;
+  color: #D1D8DE;
+}
+
+.subscription-two .title {
+  text-align: center;
+}
+
 .subscription-three {
   padding: 117px 0;
   background-color: #fff;
