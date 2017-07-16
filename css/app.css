@@ -35,7 +35,7 @@ input {
   position: absolute;
   top: 55px;
   left: 84px;
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-size: 28px;
   color: #323C47;
 }
@@ -306,7 +306,7 @@ input {
 }
 
 .alert-title {
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-size: 22px;
   color: #323C47;
 }
@@ -471,7 +471,7 @@ input {
 
 .task-list-desc .task-body .task-title {
   float: left;
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Catamaran", sans-serif;
   color: #323C47;
   font-size: 23px;
 }
@@ -638,7 +638,7 @@ body {
 }
 
 .price-table-four .section-title {
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-size: 42px;
   color: #000;
   text-transform: capitalize;
@@ -853,7 +853,7 @@ label .text {
 }
 
 .title {
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-size: 30px;
   color: #323C47;
 }
@@ -1076,7 +1076,7 @@ label .text {
 }
 
 .subscription-three .quote .text {
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-size: 24px;
   color: #323C47;
   text-align: center;
@@ -1457,6 +1457,62 @@ label .text {
   position: absolute;
   right: 20px;
   top: 17px;
+}
+
+.inner-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background-color: #fff;
+}
+
+.testimonial-one {
+  background: url(../../img/testimonials/testimonial-one.png) no-repeat;
+  width: 1170px;
+  height: 582px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-one .caption {
+  width: 279px;
+  height: 377px;
+  position: absolute;
+  top: 100px;
+  left: 694px;
+}
+
+.testimonial-one .caption .title {
+  font-family: "Catamaran", sans-serif;
+  font-size: 42px;
+  color: #fff;
+  line-height: 54px;
+}
+
+.testimonial-one .caption .username {
+  font-family: "Catamaran", sans-serif;
+  font-size: 18px;
+  color: #FFD012;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.testimonial-one .caption .tag-line {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #E6D6FF;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.testimonial-one .caption .logo {
+  background: url(../../img/testimonials/logo.png) no-repeat;
+  width: 85px;
+  height: 37px;
+  margin-top: 48px;
 }
 
 * {
