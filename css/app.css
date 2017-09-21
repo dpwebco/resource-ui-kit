@@ -1468,11 +1468,16 @@ label .text {
   background-color: #fff;
 }
 
-.testimonial-one {
+.inner-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.testimonial-one .header {
   background: url(../../img/testimonials/testimonial-one.png) no-repeat;
   width: 1170px;
   height: 582px;
-  margin: 0 auto;
+  margin: 76px auto 0 auto;
   position: relative;
 }
 
@@ -1513,6 +1518,30 @@ label .text {
   width: 85px;
   height: 37px;
   margin-top: 48px;
+}
+
+.testimonial-one .users-list {
+  width: 870px;
+  height: 95px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.testimonial-one .users-list .users-list-item {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 88px;
+}
+
+.testimonial-one .users-list .users-list-item:last-child {
+  margin-right: 0;
+}
+
+.testimonial-one .users-list .users-list-item .user-name,
+.testimonial-one .users-list .users-list-item .job-title {
+  display: block;
+  text-align: center;
 }
 
 * {
