@@ -1,3 +1,7 @@
+body {
+  background-color: #e4e4e4;
+}
+
 body.subscription-sect-five {
   background-color: #FC6E4F;
 }
@@ -1464,20 +1468,26 @@ label .text {
   margin: 0 auto;
 }
 
-.testimonial {
-  background-color: #fff;
-}
-
 .inner-container {
   width: 1170px;
   margin: 0 auto;
+}
+
+.testimonial-one {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 76px 0 40px 0;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .testimonial-one .header {
   background: url(../../img/testimonials/testimonial-one.png) no-repeat;
   width: 1170px;
   height: 582px;
-  margin: 76px auto 0 auto;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -1523,15 +1533,15 @@ label .text {
 .testimonial-one .users-list {
   width: 870px;
   height: 95px;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   list-style: none;
 }
 
 .testimonial-one .users-list .users-list-item {
-  width: 100px;
+  width: 106px;
   display: inline-block;
   text-align: center;
-  margin-right: 88px;
+  margin-right: 80px;
 }
 
 .testimonial-one .users-list .users-list-item:last-child {
@@ -1542,6 +1552,29 @@ label .text {
 .testimonial-one .users-list .users-list-item .job-title {
   display: block;
   text-align: center;
+}
+
+.testimonial-one .users-list .users-list-item .user-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.testimonial-one .users-list .users-list-item .job-title {
+  font-size: 14px;
+  color: #989898;
+  font-family: "Roboto", sans-serif;
+  margin-top: 5px;
+}
+
+.testimonial-two {
+  width: 1440px;
+  height: 673px;
+  background-color: #fff;
+  margin: 55px auto  0 auto;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 * {
