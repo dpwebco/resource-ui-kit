@@ -5,20 +5,23 @@
     margin: 0 auto;
 }
 
-.testimonial {
-    background-color: #fff;
-}
 
 .inner-container {
     width: 1170px;
     margin: 0 auto;
 }
 .testimonial-one {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 76px 0 40px 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     .header {
         background: url(../../img/testimonials/testimonial-one.png) no-repeat;
         width: 1170px;
         height: 582px;
-        margin: 76px auto 0 auto;
+        margin: 0 auto;
         position: relative;
     }
     .caption {
@@ -55,14 +58,14 @@
 
     .users-list {
         @include size(870px, 95px);
-        margin: 0 auto;
+        margin:20px auto 0 auto;
         list-style: none;
 
         .users-list-item {
-            width: 100px;
+            width: 106px;
             display: inline-block;
             text-align: center;
-            margin-right: 88px;
+            margin-right: 80px;
 
             &:last-child {
                 margin-right: 0;
@@ -73,6 +76,29 @@
                 display: block;
                 text-align: center;
             }
+
+            .user-name {
+                font-family: $secondary-font;
+                font-weight: bold;
+                font-size: 16px;
+                margin-top: 5px;
+            }
+
+            .job-title {
+                font-size: 14px;
+                color: #989898;
+
+                font-family:$secondary-font;
+                margin-top: 5px;
+            }
         }
     }
+}
+
+.testimonial-two {
+    width: 1440px;
+    height: 673px;
+    background-color: #fff;
+    margin: 55px auto  0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
