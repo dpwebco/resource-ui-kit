@@ -6,6 +6,10 @@ body.subscription-sect-five {
   background-color: #FC6E4F;
 }
 
+body.alert {
+  background-color: #fff;
+}
+
 input {
   border: none;
 }
@@ -1572,9 +1576,59 @@ label .text {
   width: 1440px;
   height: 673px;
   background-color: #fff;
+  padding-top: 126px;
   margin: 55px auto  0 auto;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-two .megaphone {
+  background: url(../../img/testimonials/two/megaphone.png) no-repeat;
+  width: 21px;
+  height: 18px;
+  float: left;
+  margin-right: 20px;
+}
+
+.testimonial-two .section-heading {
+  font-family: "Catamaran", sans-serif;
+  font-size: 42px;
+  text-align: center;
+}
+
+.testimonial-two .blurb {
+  width: 272px;
+  height: 22px;
+  margin: 20px auto 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.testimonial-two .blurb a {
+  color: #4DA1FF;
+  text-decoration: none;
+}
+
+.testimonial-two .sep {
+  width: 1140px;
+  height: 1px;
+  background-color: #E9EFF4;
+  margin-bottom: 84px;
+  margin-top: 43px;
+}
+
+.testimonial-two .t-boxes {
+  margin: 0 auto;
+}
+
+.testimonial-two .t-box {
+  width: 342px;
+  height: 180px;
+  float: left;
+  margin-right: 70px;
+}
+
+.testimonial-two .t-box:last-child {
+  margin-right: 0;
 }
 
 * {
