@@ -99,6 +99,56 @@
     width: 1440px;
     height: 673px;
     background-color: #fff;
+    padding-top: 126px;
     margin: 55px auto  0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+    .megaphone {
+        background: url(../../img/testimonials/two/megaphone.png) no-repeat;
+        width: 21px;
+        height: 18px;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .section-heading {
+        font-family: $base-font;
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .blurb {
+        width: 272px;
+        height: 22px;
+        margin: 20px auto 0 auto;
+        font-family:$secondary-font;
+
+        a {
+            color: #4DA1FF;
+            text-decoration: none;
+        }
+    }
+
+    .sep {
+        width: 1140px;
+        height: 1px;
+        background-color: #E9EFF4;
+        margin-bottom: 84px;
+        margin-top: 43px;
+    }
+
+    .t-boxes {
+        margin: 0 auto;
+    }
+    .t-box {
+        width: 342px;
+        height: 180px;
+        float: left;
+
+        margin-right: 70px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
