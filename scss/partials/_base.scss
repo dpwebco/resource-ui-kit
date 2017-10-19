@@ -5,6 +5,10 @@ body {
     &.subscription-sect-five {
         background-color: $subscript-sect-five-bg;
     }
+
+    &.alert {
+        background-color: #fff;
+    }
 }
 
 input {
